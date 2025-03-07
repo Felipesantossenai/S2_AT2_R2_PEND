@@ -1,0 +1,25 @@
+//3_Contar Letras:
+
+function contarLetras(texto){
+    return texto.length;
+}
+console.log(contarLetras("Passaro"))
+
+//3.2_Inverter String:
+
+function inverterString(texto){
+    let inverter = [];
+    for(let i = texto.length - 1; i >= 0; i--){
+        inverter += texto[i];
+    }
+    return inverter;
+}
+console.log(inverterString("texto"))
+
+//3.3_Verificar Palíndromo:
+
+function ehPalindromo(texto){
+    let palin = texto.split('').reverse().join('');
+    return texto.toLowerCase() === palin.toLowerCase();
+}
+console.log(ehPalindromo("omississimo"));
