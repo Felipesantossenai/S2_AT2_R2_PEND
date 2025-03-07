@@ -2,14 +2,16 @@
 
 let data = new Date()
 function obterDataAtual(data){
-    console.log(data.getDate(), "/", data.getMonth()+1, "/", data.getFullYear());
+    return `${data.getDate()}/0${data.getMonth()+1}/${data.getFullYear()}`
  }
 obterDataAtual(data);
+console.log(obterDataAtual(data));
 
 //1.2_Hora:
 
 let hora = new Date()
 function obterHoraAtual() {
-    console.log(hora.getHours()-3, ":" ,hora.getMinutes(), ":" ,hora.getSeconds())
+    return `${hora.getHours()}:${hora.getMinutes()}:${hora.getSeconds()}`;
 }
 obterHoraAtual(hora);
+console.log(obterHoraAtual(hora));
